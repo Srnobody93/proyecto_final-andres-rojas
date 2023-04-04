@@ -7,6 +7,7 @@ name = "pypi"
 django = "*"
 django-froala-editor = "*"
 pillow = "*"
+crispy = "*"
 
 [dev-packages]
 
