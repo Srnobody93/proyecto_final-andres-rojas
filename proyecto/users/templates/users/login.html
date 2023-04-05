@@ -6,15 +6,15 @@
         <form action="" method="post">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Sign In</legend>
+                <legend class="border-bottom mb-4">inicio de sesion</legend>
                 {{ form }}
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Login In</button>
+                <button class="btn btn-outline-info" type="submit">entrar</button>
             </div>
         </form>
         <div class="border-top pt-3">
-            <small class="text-muted">Do you need an account? <a href="{% url 'register' %}">Register Now</a></small>
+            <small class="text-muted">tiene es una cueta? <a href="{% url 'register' %}">registrate</a></small>
         </div>
     </div>
 {% endblock content %}

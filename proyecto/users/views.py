@@ -24,7 +24,7 @@ def profile(request):
      
     return render(request, 'users/profile.html')
 
-
+@login_required
 def profile_update(request):
     
     if request.method == "POST":
@@ -37,7 +37,7 @@ def profile_update(request):
             messages.success(request, f'su perfil fue actualizado!')
             return redirect ('profile')
     else:
-        u_form = UserUpdateForm(nstance = request.user)
+        u_form = UserUpdateForm(instance = request.user)
         p_form = ProfileUpdateForm(instance = request.user.profile)
 
     contex = {
